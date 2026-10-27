@@ -179,7 +179,7 @@ with left:
         st.info(
             f"**추천 일정: {first['subject']} - {first['name']}**\n\n"
             f"{message}\n\n"
-            f"중요도: {{3: '높음', 2: '보통', 1: '낮음'}[first['importance']]}"
+            f"중요도: { {3: '높음', 2: '보통', 1: '낮음'}[first['importance']] }"
         )
     else:
         st.success("미완료 일정이 없습니다.")
